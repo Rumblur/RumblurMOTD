@@ -1,0 +1,31 @@
+api-version: "1.16"
+name: "RumblurMOTD"
+version: "1.0-SNAPSHOT"
+description: "Random MOTD, special for Rumblur"
+author: "Xtimms"
+main: "by.rumblur.plugin.RandomMOTD"
+
+permissions:
+  RumblurMOTD.main:
+    default: op
+    description: "Grants the access to use /motd command."
+  RumblurMOTD.help:
+    default: op
+    description: "Grants the access to use /motd help command."
+  RumblurMOTD.motd:
+    default: op
+    description: "Grants the access to use /motd motd command."
+  RumblurMOTD.reload:
+    description: "Grants the access to use /motd reload command."
+    default: op
+  RumblurMOTD.author:
+    description: "Grants the access to use /motd author command."
+    default: op
+prefix: Xtimms | RumblurMOTD
+commands:
+  randommotd:
+    description: "Reloads the config file of RumblurMOTD."
+    aliases: [rmotd, randmotd]
+    permission: RumblurMOTD.*
+    default: op
+    permission-message: "§4You are not permitted to use this command! Please contact the server administrators if you think this is a server-side error or bug."

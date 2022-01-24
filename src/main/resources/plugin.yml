@@ -1,6 +1,6 @@
-api-version: "1.16"
+api-version: "1.18"
 name: "RumblurMOTD"
-version: "1.0-SNAPSHOT"
+version: "1.1"
 description: "Random MOTD, special for Rumblur"
 author: "Xtimms"
 main: "by.rumblur.plugin.RandomMOTD"

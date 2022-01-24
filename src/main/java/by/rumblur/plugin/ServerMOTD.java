@@ -9,7 +9,7 @@ import org.bukkit.event.server.ServerListPingEvent;
 import java.util.List;
 import java.util.Random;
 
-public class ServerMOTD implements Listener{
+public class ServerMOTD implements Listener {
 
     private RandomMOTD plugin;
     public ServerMOTD(RandomMOTD plugin) {

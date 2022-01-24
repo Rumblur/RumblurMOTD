@@ -18,7 +18,6 @@ public class Commands implements CommandExecutor {
 
     @Override
     public boolean onCommand(@Nonnull CommandSender sender, Command cmd, @Nonnull String label, @Nonnull String[] args) {
-
         if (cmd.getName().equalsIgnoreCase("randommotd")) {
             if(args.length == 0) {
                 if(!sender.hasPermission("RumblurMOTD.main")) {return true;}
@@ -71,5 +70,4 @@ public class Commands implements CommandExecutor {
         }
         return true;
     }
-
 }

@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.logging.Level;
 
 public class RandomMOTD extends JavaPlugin implements Listener {
+
     @Override
     public void onEnable() {
         saveDefaultConfig();
@@ -16,7 +17,9 @@ public class RandomMOTD extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new ServerMOTD(this), this);
     }
 
+    @Override
     public void onDisable() {
         getLogger().log(Level.INFO, "Goodbye!");
     }
+
 }

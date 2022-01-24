@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TabCompleter implements org.bukkit.command.TabCompleter {
+
+    @Override
     public List<String> onTabComplete(@Nonnull CommandSender sender, @Nonnull Command cmd, @Nonnull String label, String[] args) {
         if (args.length == 1) {
             List<String> tabCompleteList = new ArrayList<String>();
@@ -19,4 +21,5 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
         }
         return null;
     }
+
 }
